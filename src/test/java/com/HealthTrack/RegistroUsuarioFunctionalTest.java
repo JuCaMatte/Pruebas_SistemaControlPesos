@@ -8,6 +8,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import org.junit.jupiter.api.Tag;
+
+@Tag("functional")
 public class RegistroUsuarioFunctionalTest {
 
     private WebDriver driver;

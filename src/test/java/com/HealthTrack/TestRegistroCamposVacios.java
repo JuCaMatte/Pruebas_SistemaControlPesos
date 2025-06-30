@@ -8,6 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.*;
 import java.time.Duration;
 
+import org.junit.jupiter.api.Tag;
+
+@Tag("functional")
 public class TestRegistroCamposVacios {
 
     private WebDriver driver;
