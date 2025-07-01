@@ -29,8 +29,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: Build and run tests with Maven
-        run: mvn clean test
+      - name: Build, test and generate Jacoco report
+        run: mvn clean verify
+
 
       # Nuevo paso: subir reportes Surefire
       - name: Upload Surefire Reports
