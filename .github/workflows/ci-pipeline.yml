@@ -31,3 +31,19 @@ jobs:
 
       - name: Build and run tests with Maven
         run: mvn clean test
+
+      # Nuevo paso: subir reportes Surefire
+      - name: Upload Surefire Reports
+        if: always() # Se ejecuta aunque falle el paso anterior
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-reports
+          path: target/surefire-reports
+
+      # Nuevo paso: subir reportes Jacoco
+      - name: Upload Jacoco Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jacoco-report
+          path: target/site/jacoco
