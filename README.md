@@ -54,5 +54,17 @@ Se implementó una solución integral con enfoque DevOps para garantizar calidad
 
 ## 🚀 Ejecución local
 
+
+## Proyecto HealthTrack
+
+Este proyecto contiene pruebas funcionales, pruebas unitarias y configuración de CI/CD con GitHub Actions para la empresa HealthTrack.
+
+### 🚀 Update
+
+Forzando ejecución del pipeline para validar configuración de Jacoco y artefactos.
+
+
+
+
 ```bash
 mvn clean test
